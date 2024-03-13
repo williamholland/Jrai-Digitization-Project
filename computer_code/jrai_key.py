@@ -93,6 +93,8 @@ letter doesn't matter):
 import re
 import curses
 
+ESC_KEY = 27
+
 substitutions = (
 
 
@@ -194,8 +196,8 @@ def main(stdscr):
 
     while True:
         key = stdscr.getch()
-        if key == 27:  # ESC key
-            return
+        if key == ESC_KEY:
+            return prev_words+word
         elif key == curses.KEY_BACKSPACE:
             if word:
                 word = word[:-1]
@@ -219,8 +221,7 @@ def main(stdscr):
             word = ""
         else:
             word += chr(key)
-            #stdscr.addstr(1, 0, word)
             stdscr.addch(chr(key))
             stdscr.refresh()
 
-curses.wrapper(main)
+print(curses.wrapper(main))
