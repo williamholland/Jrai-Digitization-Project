@@ -41,8 +41,8 @@ letter doesn't matter):
     h - h
     I - I
     i - i
-    Ĭ - IW
-    ĭ - iw
+    Ĭ - IS
+    ĭ - is
     J - J
     j - j
     K - K
@@ -57,8 +57,8 @@ letter doesn't matter):
     ñ - nn
     O - O
     o - o
-    Ŏ - Ow
-    ŏ - ow
+    Ŏ - OS
+    ŏ - os
     Ô - OO
     ô - oo
     Ô̆ - OOS/OSO
@@ -94,10 +94,77 @@ import re
 import curses
 
 substitutions = (
-    (r'^B[bB](?![Bb])', r'Ƀ'), # exactly 2 bs at the start
-    (r'^b[bB](?![Bb])', r'ƀ'),
-    (r'^(B[bB])[bB]', r'\1'), # if more than 2 bs, put as entered but ignore final b
-    (r'^(b[bB])[bB]', r'\1'),
+    (r'A[Ss](?![Ss])', r'Ă'), # AS makes, with exactly 1 s sub
+    (r'a[Ss](?![Ss])', r'ă'),
+    (r'([Aa][Ss])[Ss]', r'\1'), # if more than 2 s, put as entered but ignore final s
+
+    (r'A[Aa](?![Aa])', r'Â'), # exactly 2 as
+    (r'a[Aa](?![Aa])', r'â'),
+    (r'([Aa][Aa])[Aa]', r'\1'), # if more than 2 as, put as entered but ignore final a
+
+    (r'B[bB](?![Bb])', r'Ƀ'), # exactly 2 bs
+    (r'b[bB](?![Bb])', r'ƀ'),
+    (r'([bB]{2})[bB]', r'\1'), # if more than 2 bs, put as entered but ignore final b
+
+    (r'C[Cc](?![Cc])', r'Č'),
+    (r'c[Cc](?![Cc])', r'č'),
+    (r'([Cc]{2})[Cc]', r'\1'),
+
+    (r'D[Dd](?![Dd])', r'Đ'),
+    (r'd[Dd](?![Dd])', r'đ'),
+    (r'([Dd]{2})[Dd]', r'\1'),
+
+    (r'E[Ss](?![Ss])', r'Ĕ'),
+    (r'e[Ss](?![Ss])', r'ĕ'),
+    (r'([Ee][Ss])[Ss]', r'\1'),
+
+    (r'E[Ee](?![Ee])', r'Ê'),
+    (r'e[Ee](?![Ee])', r'ê'),
+    (r'([Ee]{2})[Ee]', r'\1'),
+
+    (r'E([Ee][Ss]|[Ss][Ee])(?![EeSs])', r'Ê̆'),
+    (r'e([Ee][Ss]|[Ss][Ee])(?![EeSs])', r'ê̆'),
+    (r'([Ee][EeSs]{2})[EeSs]', r'\1'),
+
+    (r'I[Ss](?![Ss])', r'Ĭ'),
+    (r'i[Ss](?![Ss])', r'ĭ'),
+    (r'([Ii][Ss])[Ss]', r'\1'),
+
+    (r'N[Nn](?![Nn])', r'Ñ'),
+    (r'n[Nn](?![Nn])', r'ñ'),
+    (r'([Nn]{2})[Nn]', r'\1'),
+
+    (r'O[Ss](?![Ss])', r'Ŏ'),
+    (r'o[Ss](?![Ss])', r'ŏ'),
+    (r'([Oo][Ss])[Ss]', r'\1'),
+
+    (r'O[Oo](?![oo])', r'Ô'),
+    (r'o[Oo](?![oo])', r'ô'),
+    (r'([Oo]{2})[Oo]', r'\1'),
+
+    (r'O([Oo][Ss]|[Ss][Oo])(?![OoSs])', r'Ô̆'),
+    (r'o([Oo][Ss]|[Ss][Oo])(?![OoSs])', r'ô̆'),
+    (r'([Oo][OoSs]{2})[OoSs]', r'\1'),
+
+    (r'O[Ww](?![Ww])', r'Ơ'),
+    (r'o[Ww](?![Ww])', r'ơ'),
+    (r'([Oo][Ww])[Ww]', r'\1'),
+
+    (r'O([Ww][Ss]|[Ss][Ww])(?![SsWwOo])', r'Ơ̆'),
+    (r'o([Ww][Ss]|[Ss][Ww])(?![SsWwOo])', r'ơ̆'),
+    (r'([Oo][OoSsWw]{2})[OoSsWw]', r'\1'),
+
+    (r'U[Ss](?![Ss])', r'Ŭ'),
+    (r'u[Ss](?![Ss])', r'ŭ'),
+    (r'([Uu][Ss])[Ss]', r'\1'),
+
+    (r'U[Ww](?![Ww])', r'Ư'),
+    (r'u[Ww](?![Ww])', r'ư'),
+    (r'([Uu][Ww])[Ww]', r'\1'),
+
+    (r'U([Ww][Ss]|[Ss][Ww])(?![SsWwUu])', r'Ư̆'),
+    (r'u([Ww][Ss]|[Ss][Ww])(?![SsWwUu])', r'ư̆'),
+    (r'([Uu][UuSsWw]{2})[UuSsWw]', r'\1'),
 )
 
 def process_word(word):
