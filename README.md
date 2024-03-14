@@ -6,8 +6,10 @@ I plan to use LibreOffice Base for ease of data entry and manipulation then prod
 
 ## Areas of the Project
 
-* jrai keyboard like uni-key
-* scanned books
-* word lists
-* glosbe data
-* wiktionary data
+* jrai keyboard like uni-key (WIP)
+* scanned books (WIP)
+* word lists (WIP)
+* word frequency analysis (TODO)
+* glosbe data (TODO)
+* wiktionary data (TODO)
+* anki data (TODO)
