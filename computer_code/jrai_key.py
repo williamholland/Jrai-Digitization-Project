@@ -102,6 +102,11 @@ substitutions = (
     (r'(?<![Aa])a[Ss](?![Ss])', r'ă'),
     (r'([Aa][Ss])[Ss]', r'\1'), # if more than 2 s, put as entered but ignore final s
 
+    # duplicate of ă because I keep doing this by mistake
+    (r'(?<![Aa])A[Ww](?![Ww])', r'Ă'),
+    (r'(?<![Aa])a[Ww](?![Ww])', r'ă'),
+    (r'([Aa][Ww])[Ww]', r'\1'),
+
     (r'(?<![Aa])A[Aa](?![Aa])', r'Â'),
     (r'(?<![Aa])a[Aa](?![Aa])', r'â'),
     (r'([Aa][Aa])[Aa]', r'\1'),
