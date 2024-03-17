@@ -41,4 +41,4 @@ def combine_verses(xml_file1, xml_file2):
                     print(f"{verse2.text} @ {verse1.text}")
                     
 # Example usage
-combine_verses('bible/Jrai2016Bible.xml', 'bible/EnglishNRSVBible.xml')
+combine_verses('bible/Jrai2016Bible.xml', 'bible/EnglishDarbyBible.xml')
