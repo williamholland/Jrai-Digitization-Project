@@ -36,9 +36,12 @@ def combine_verses(xml_file1, xml_file2):
                     verse2 = chapter2.find(f"verse[@number='{verse_number}']")
                     if verse2 is None:
                         continue
+
+                    verse1_text = verse1.text.replace('\n', ' ').strip()
+                    verse2_text = verse2.text.replace('\n', ' ').strip()
                     
                     # Combine matching verses and print
-                    print(f"{verse2.text} @ {verse1.text}")
+                    print(f"{verse2_text} @ {verse1_text}")
                     
 # Example usage
 combine_verses('bible/Jrai2016Bible.xml', 'bible/EnglishDarbyBible.xml')
