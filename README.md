@@ -11,6 +11,7 @@ I plan to use LibreOffice Base for ease of data entry and manipulation then prod
 * word lists (WIP)
 * glosbe data (WIP)
 * Jrai bible to XML (WIP)
+* use the glosbe API to fix the jrai examples that have been uploaded as words (TODO)
 * word frequency analysis (TODO)
 * wiktionary data (TODO)
 * anki data (TODO)
