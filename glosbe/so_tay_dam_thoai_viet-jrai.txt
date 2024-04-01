@@ -62,7 +62,7 @@ Mời anh về làng tôi chơi. @ Kâo jak ih nao ngui pơ plơi kâo.
 Làng anh ở đâu? @ Pơpă plơi ih?
 Làng tôi ở Bôn Tham. @ Plơi kâo pơ Ƀôn Tham.
 Làng anh có đẹp không? @ Plơi ih hiăm mơh?
-Làng tôi rất đẹp\... Có sông Ayun, có núi Chứ Mố @ Plơi kâo hiăm biă mă. Mâo krông Ayun, mâo Chư̆ Mô̆.
+Làng tôi rất đẹp... Có sông Ayun, có núi Chứ Mố @ Plơi kâo hiăm biă mă. Mâo krông Ayun, mâo Chư̆ Mô̆.
 Con trai, con gái nhiều không? @ Rơkơi, bơnai lu mơh?
 Rất nhiều @ Lu biă mă.
 Họ có đẹp và giỏi không? @ Gơnhu hiăm hang rơgơi mơh?
@@ -70,7 +70,7 @@ Họ rất đẹp và giỏi. @ Gơnhu hiăm biă mă hang rơgơi.
 Người gà thế nào? @ Hyưm ƀing tơha lĕ?
 Người già hiều hậu, yêu thương con cháu. @ Ƀing tơha dô̆ amlưih, khap kơ ană tơchô.
 Còn trẻ em? @ Bi ƀing chơđai muai lĕ?
-Trẻ em rất ngoan và đều đến trường. @Ƀing chơđai muai thâo săng liah anun nao hrăm hră sôh.
+Trẻ em rất ngoan và đều đến trường. @ Ƀing chơđai muai thâo săng liah anun nao hrăm hră sôh.
 Làng anh có bệnh xá không? @ Plơi ih mâo sang ia jrao mơh?
 Có bệnh xá. @ Mâo sang ia jrao mơn.
 Bệnh xá ở đâu? @ Pơpă sang ia jrao lĕ?
@@ -128,11 +128,11 @@ Làng tôi gần công trình thủy lợi Ayun hạ. Nước nhiều, tôm cà 
 Hàng năm làng làm mấy vụ lúa? @ Rim thun, ană plơi ngă hơdum yan pơdai?
 Làng làm hai vụ lúa. @ Ană plơi ngă dua yan pơdai.
 Cac gia đình thường nuôi con gì? @ Dum sang anô̆ amăng ploiw juat rông mơnong hơget?
-Các gia đình thương nuôi trâu, bò, heo, gà, dê,... @ Dum sang anô̆ amăng ploiw juat rông kơbao, rơmô rơmô, un. mơnŭ, bê,\...
+Các gia đình thương nuôi trâu, bò, heo, gà, dê,... @ Dum sang anô̆ amăng ploiw juat rông kơbao, rơmô rơmô, un. mơnŭ, bê,...
 Nuôi trong chuồng hay thả rong? @ Rông amăng war ƀudah prưh lui cha chot?
 Nuôi trong chuồng. @ Rông amăng war.
 Thức ăn của chúng là gì? @ Gơnam hơget gơnhu ƀong?
-Là cỏ, rau, cám, thóc, ... @ Rok, anham, hơkam, pơdai,\...
+Là cỏ, rau, cám, thóc, ... @ Rok, anham, hơkam, pơdai,...
 Dân làng có đủ ăn không? @ Ană plơi ƀong huă djop mơh?
 Có 10 hộ đói, thiếu ăn. @ Mâo 10 bung sang rơmon, koƀah ƀong huă.
 Vì sao? @ Yua hơget?
